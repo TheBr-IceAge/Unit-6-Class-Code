@@ -27,14 +27,21 @@ public class ArrayAlgorithmsTest {
     @Test
     public void testShiftLeft() {
         int[] arr = {5, 2, 8, 1, 9};
-        ArrayAlgorithms.shiftLeft(arr);
-        assertArrayEquals(new int[]{2, 8, 1, 9, 5}, arr);
+        int[] shiftedArr = ArrayAlgorithms.shiftLeft(arr);
+        assertArrayEquals(new int[]{2, 8, 1, 9, 5}, shiftedArr);
+    }
+
+    @Test
+    public void testShiftRight(){
+        int[] arr = {5, 2, 8, 1, 9};
+        int[] shiftedArr = ArrayAlgorithms.shiftRight(arr);
+        assertArrayEquals(new int[]{2, 8, 1, 9, 5}, shiftedArr);
     }
 
     @Test
     public void testReverse() {
         int[] arr = {5, 2, 8, 1, 9};
-        ArrayAlgorithms.reverseArray(arr);
-        assertArrayEquals(new int[]{9, 1, 8, 2, 5}, arr);
+        int[] reversedArr = ArrayAlgorithms.reverseArray(arr);
+        assertArrayEquals(new int[]{9, 1, 8, 2, 5}, reversedArr);
     }
 }
